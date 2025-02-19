@@ -60,18 +60,6 @@ The server utilizes:
   1. Waiting for all jobs to finish.
   2. Ensuring job results are written to the socket before shutdown.
 
-## Directory Structure
-```
-/project-root
-│── bin/              # Contains compiled binaries
-│── src/              # Source code files
-│── Makefile          # Build system
-│── README.md         # Documentation
-```
-- The `Makefile` includes only `bin` and `src` due to issues with `.o` file generation.
-- No third-party libraries are used.
-- No custom tests are included.
-
 ## Known Issues
 - If a job does not return an output, the commander may display gibberish characters due to uninitialized memory being sent.
 
